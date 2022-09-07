@@ -27,3 +27,28 @@
 
     font-family: 'Inter', sans-serif;
 }
+
+.main__section {
+    background-color: var(--very-dark-blue-TopBGPattern);
+}
+.main__section-heading {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 75px 50px;
+}
+
+.title {
+    font-size: 1.5em;
+    color: var(--white-text);
+}
+.total-followers {
+    font-size: 0.8em;
+    color: var(--desaturated-blue-Text);
+    margin-top: 5px;
+    font-weight: 700;
+}
+.selector__title {
+    color: var(--white-text);
+    font-weight: 700;
+}
