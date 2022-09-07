@@ -58,6 +58,7 @@
     color: var(--white-text);
     font-weight: 700;
     margin-left: -15px;
+
 }
 .selector__button {
     width: 50px;
@@ -65,9 +66,11 @@
     background: var(--toggle);
     margin-left: 10px;
     border-radius: 15px;
-
+    
     display: flex;
     padding: 2px;
+
+    cursor: pointer;
 }
 .selector__button-inner-circle {
     width: 25px;
@@ -75,4 +78,8 @@
     background-color: var(--dark-desaturated-blue-CardBG);
     border-radius: 100%;
     position: absolute;
+    transition: all 1.5s;
+}
+.selector__button-inner-circle-selected {
+    justify-content: end;
 }
