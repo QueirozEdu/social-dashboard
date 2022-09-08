@@ -30,6 +30,10 @@
 
 .main__section {
     background-color: var(--very-dark-blue-TopBGPattern);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 .main__section-heading {
@@ -37,6 +41,9 @@
     justify-content: space-between;
 
     padding: 75px 50px;
+
+    width: 75%;
+    max-width: 1440px;
 }
 
 .title {
@@ -82,4 +89,66 @@
 }
 .selector__button-inner-circle-selected {
     justify-content: end;
+}
+.main__section-cards {
+    width: 75%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 50px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: white;
+    background-color: var(--dark-desaturated-blue-CardBG);
+    border-radius: 5px;
+    border-top: 3px solid var(--bright-red);
+
+    width: 220px;
+    height: 175px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+}
+.card__header .social__name {
+    margin-left: 3px;
+    font-size: 0.75em;
+    color: var(--dark-grayish-blue-Text);
+    font-weight: 700;
+}
+.card__header svg {
+    margin-right: 3px;
+}
+.card__stats {
+    display: flex;
+    align-items: center;
+    
+    font-size: 0.75em;
+}
+.card__stats svg {
+    margin-right: 3px;
+}
+.card__stats p {
+    margin-left: 3px;
+}
+
+.card__followers {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.p--followers {
+    font-size: 0.625em;
+    font-weight: 700;
+    color: var(--dark-grayish-blue-Text);
+    letter-spacing: 3px;
+    margin-top: -15px;
+
 }
