@@ -2,9 +2,9 @@
     --lime-green: hsl(163, 72%, 41%);
     --bright-red: hsl(356, 69%, 56%);
 
-    -facebook: hsl(208, 92%, 53%);
+    --facebook: hsl(208, 92%, 53%);
     --twitter: hsl(203, 89%, 53%);
-    --instagram: linear-gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --instagram: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --youTube: hsl(348, 97%, 39%);
 
 
@@ -96,6 +96,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1px 50px;
+    margin-bottom: -75px;
 }
 .card {
     display: flex;
@@ -106,10 +107,26 @@
     color: white;
     background-color: var(--dark-desaturated-blue-CardBG);
     border-radius: 5px;
-    border-top: 3px solid var(--bright-red);
-
+    
     width: 220px;
     height: 175px;
+}
+#facebook__card {
+    border-top: 3px solid var(--facebook);
+}
+#twitter__card {
+    border-top: 3px solid var(--twitter);
+}
+#instagram__card {
+    background: 
+        linear-gradient(var(--dark-desaturated-blue-CardBG), var(--dark-desaturated-blue-CardBG)) padding-box,
+        linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+    border-radius: 5px;
+    border-top: 3px solid transparent;
+
+}
+#youtube__card {
+    border-top: 3px solid var(--youTube);
 }
 
 .card__header {
@@ -150,5 +167,8 @@
     color: var(--dark-grayish-blue-Text);
     letter-spacing: 3px;
     margin-top: -15px;
+}
 
+.overview__section {
+    background-color: var(--very-dark-blue-BG);
 }
