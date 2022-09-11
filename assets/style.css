@@ -171,4 +171,26 @@
 
 .overview__section {
     background-color: var(--very-dark-blue-BG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1px;
+}
+
+.overview__wrap {
+    color: var(--white-text);
+    width: 75%;
+    max-width: 1440px;
+
+    margin-top: 150px;
+}
+.overview__section--title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.overview__section--cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 75px;
 }
