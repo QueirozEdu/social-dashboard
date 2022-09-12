@@ -198,6 +198,8 @@
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 75px;
+
+    max-width: 1077px !important;
 }
 
 .overview__section--card {
