@@ -174,10 +174,11 @@
 .overview__section {
     background-color: var(--very-dark-blue-BG);
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin-top: -1px;
-    height: 66.2vh;
+    /* height: 66.2vh; */
+    height: calc(109vh - 371px);
 }
 
 .overview__wrap {
@@ -192,10 +193,12 @@
     font-weight: 700;
 }
 .overview__section--cards {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 1;
     gap: 20px;
     margin-top: 75px;
 
