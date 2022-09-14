@@ -113,6 +113,12 @@
     width: 220px;
     height: 175px;
 }
+
+.card:hover{
+    background: hsl(228, 17%, 30%);
+    
+    cursor: pointer;
+}
 #facebook__card {
     border-top: 3px solid var(--facebook);
 }
