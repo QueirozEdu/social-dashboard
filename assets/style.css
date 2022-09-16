@@ -49,6 +49,7 @@
 .title {
     font-size: 1.5em;
     color: var(--white-text);
+    font-weight: 700;
 }
 .total-followers {
     font-size: 0.8em;
